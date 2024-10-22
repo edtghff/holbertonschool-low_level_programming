@@ -3,11 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: Returns the last digit of a number
- *
- * Return: Always 0 (Success)
+ * Main: returns last digit of a number
+ * 
+ * Return: Always (Success)
  */
 int main(void)
 {
@@ -33,4 +31,3 @@ int main(void)
 
     return (0);
 }
-
