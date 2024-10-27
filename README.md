@@ -40,7 +40,7 @@ Each project folder contains its own `README.md` with more details on the specif
    ./<output_name>
    
 ## Author
-**Ed**
+**Ahmed**
 [GitHub](https://github.com/edtghff)
 [Linkedin](https://www.linkedin.com/in/ahmed-taghiyev/)
 [Instagram](https://instagram.com/edtghf)
