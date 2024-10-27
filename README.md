@@ -38,3 +38,7 @@ Each project folder contains its own `README.md` with more details on the specif
    ```bash
    gcc -Wall -Werror -Wextra -pedantic -std=gnu89 <file_name.c> -o <output_name>
    ./<output_name>
+   
+## Author
+**edtghff**  
+[GitHub Profile](https://github.com/edtghff)
