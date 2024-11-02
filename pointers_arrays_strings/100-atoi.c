@@ -6,24 +6,35 @@
  *
  * Return: integer from the string
  */
+
 int _atoi(char *s)
 {
-int i = 0, sign = 1;
-unsigned int num = 0;
+	int i = 0;
+	int m = 0;
 
-while (s[i] != '\0')
-{
-if (s[i] == '-')
-sign *= -1;
-if (s[i] >= '0' && s[i] <= '9')
-{
-num = (num * 10) + (s[i] - '0');
-if (!(s[i + 1] >= '0' && s[i + 1] <= '9'))
-break;
-}
-i++;
-}
+	unsigned int n = 0;
 
-return (num * sign);
-}
+	while (*(s + i) != 0)
+	{
+		if (*(s + i) == 45)
+		{
+			m++;
+		}
 
+		if (*(s + i) >= 48 && *(s + i) <= 57)
+		{
+			n = n * 10 + (*(s + i) - 48);
+
+			if (*(s + i + 1) < 48 || *(s + i + 1) > 57)
+			{
+				break;
+			}
+		}
+		i++;
+	}
+	if (m % 2 == 1)
+	{
+		n = -n;
+	}
+	return (n);
+}
