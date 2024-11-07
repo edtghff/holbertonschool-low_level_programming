@@ -4,31 +4,34 @@
 /**
  * _strspn - gets the length of a prefix substring
  * @s: string
- * @accept: checks if found in accept
+ * @n: accept
  * Return: count
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	int i;
-	int j;
-	int accept;
+	int i, j;
+	int found_in_accept;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		accept = 0;
+		found_in_accept = 0;
 
 		for (j = 0; accept[j] != '\0'; j++)
 		{
-			accept = 1;
-			break;
+			if (s[i] == accept[j])
+			{
+				found_in_accept = 1;
+				break;
+			}
 		}
 
-		if (accept)
+		if (found_in_accept)
 		{
 			count++;
-		} else
+		} 
+		else
 		{
 			break;
 		}
