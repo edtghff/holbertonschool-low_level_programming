@@ -4,7 +4,7 @@
 /**
  * _strspn - gets the length of a prefix substring
  * @s: string
- * @n: accept
+ * @accept: accept
  * Return: count
  */
 
@@ -30,7 +30,7 @@ unsigned int _strspn(char *s, char *accept)
 		if (found_in_accept)
 		{
 			count++;
-		} 
+		}
 		else
 		{
 			break;
