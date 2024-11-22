@@ -1,18 +1,21 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+  * malloc_checked - Allocates memory
+  * @b: the size to allocate
+  *
+  * Return: Nothing.
+  */
+void *malloc_checked(unsigned int b)
 {
-    char *concat;
+	void *p;
 
-    concat = string_nconcat("Best ", "School !!!", 6);
-    printf("%s\n", concat);
-    free(concat);
-    return (0);
+	p = malloc(b);
+
+	if (p == NULL)
+		exit(98);
+
+	return (p);
 }
