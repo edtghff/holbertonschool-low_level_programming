@@ -9,9 +9,9 @@
  */
 struct dog
 {
-    char *name;
-    float age;
-    char *owner;
+char *name;
+float age;
+char *owner;
 };
 
 /* Typedef to create dog_t as an alias for struct dog */
