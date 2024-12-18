@@ -20,7 +20,7 @@ Topics and projects covered in this repository include:
 - **Hello, World**: Basic syntax of C, compiling, and printing output.
 - **Variables, if, else, while**: Control structures and loops in C.
 - **Functions and Nested Loops**: Writing functions and understanding loop nesting.
-- **argc_argv**: Handling command-line arguments with argc and argv in C.
+- **Argc_argv**: Handling command-line arguments with argc and argv in C.
 - **Bit_manipulation**: Working with bitwise operators to manipulate bits in C.
 - **Doubly_linked_lists**: Creating and manipulating doubly linked lists in C.
 - **File_io**: Reading from and writing to files in C.
